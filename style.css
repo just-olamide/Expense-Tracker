@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 20px ;
+    justify-items: center;
+}
+.container h2{
+    margin-bottom: 20px;
+}
+#input-text{
+    padding: 10px;
+    border-radius: 5px;
+}
+#Amount{
+    padding: 9px;
+    border-radius: 5px;
+}
+#category{
+    padding: 10px;
+    border-radius: 5px;
+}
+#add-btn{
+    padding: 5px;
+    border-radius: 6px;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+#expense-list{
+    margin-top: 30px;
+}
+#expense-list th, td{
+    border: 1px solid bisque;
+    /* text-align: left; */
+    padding: 20px;
+}
+.summary {
+    margin-top: 30px;
+}
+#cate{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.list{
+    margin-left: 40px;
+    line-height: 1.7;
+}
