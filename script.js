@@ -6,9 +6,11 @@ const dropDown = document.getElementById("category");
 const addButton = document.getElementById("add-btn");
 const expenseList = document.getElementById("expenselist");
 const inputAmount = document.getElementById("Amount");
+const deleted = document.getElementById("Delete");
 const totalExpensesElement = document.getElementById("totalExpenses");
 
 console.log(inputText, dropDown, addButton, expenseList);
+
 addButton.addEventListener("click", addExpense);
 
 function addExpense() {
@@ -54,3 +56,19 @@ function updateCategoryTotals() {
         <li>Others: ₦${categoryTotals.Others.toFixed(2)}</li>
     `;
 }
+
+function sortExpensesByAmount() {
+    expenses.sort((a,b) => a.amount - b.amount);
+    displayExpenses();
+}
+
+function sortExpensesByDate() {
+    expenses.sort((a,b) => new Date(b.date) - new Date(a.date));
+    displayExpenses();
+}
+
+deleted.addEventListener("click", function(){
+    let delette = document.getElementById('');
+    deleted.style.display = 'none'
+     })
+

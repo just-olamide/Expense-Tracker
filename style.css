@@ -29,6 +29,13 @@
     color: aliceblue;
     cursor: pointer;
 }
+#Delete{
+    padding: 5px;
+    border-radius: 6px;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
 #expense-list{
     margin-top: 30px;
 }
@@ -47,4 +54,10 @@
 .list{
     margin-left: 40px;
     line-height: 1.7;
+}
+
+@media screen and (max-width:750px){
+    #expense-list th, td{
+        padding: 5px;
+    }
 }
